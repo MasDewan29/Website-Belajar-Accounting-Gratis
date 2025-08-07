@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Belajar Accounting Dasar - 10 Bab Lengkap</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+      scroll-behavior: smooth;
+    }
+
+    nav.desktop-menu a::after {
+      content: " →";
+      color: #1e40af;
+      font-weight: bold;
+    }
+
+    nav.desktop-menu a:last-child::after {
+      content: "";
+    }
+
+    #mobile-menu {
+      display: none;
+    }
+
+    #hamburger {
+      display: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav.desktop-menu {
+        display: none;
+      }
+
+      #hamburger {
+        display: block;
+      }
+
+      #mobile-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1e40af;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+      }
+
+      #mobile-menu.open {
+        display: flex;
+      }
+
+      #mobile-menu a {
+        padding: 1rem 1.5rem;
+        color: #e0f2fe;
+        border-bottom: 1px solid #3b82f6;
+        font-weight: 600;
+      }
+
+      #mobile-menu a:hover {
+        background-color: #3b82f6;
+        color: white;
+      }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <header
+    class="bg-blue-900 text-white py-6 shadow-lg sticky top-0 z-50 border-b-4 border-blue-700 drop-shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center relative">
+      <h1 class="text-4xl font-extrabold tracking-wide select-none">Belajar Accounting Dasar</h1>
+
+      </nav>
+
+      <!-- Hamburger menu -->
+      <div id="hamburger" class="md:hidden cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav i
+
+  <main class="flex-grow max-w-7xl mx-auto px-8 py-16 bg-white rounded-3xl shadow-xl my-12">
+
+    <!-- Bab 1 -->
+    <section id="bab1" class="mb-24" data-aos="fade-up" data-aos-delay="50">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 1: Pengantar Akuntansi
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Akuntansi adalah sistem informasi yang vital dalam dunia bisnis dan organisasi yang bertujuan untuk mencatat,
+        mengklasifikasikan, mengukur, dan melaporkan aktivitas keuangan secara sistematis dan tepat waktu. Dengan
+        informasi akuntansi yang akurat, perusahaan dan individu dapat mengambil keputusan keuangan yang tepat serta
+        memenuhi kewajiban hukum dan pelaporan pajak.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">1.1 Definisi Akuntansi Menurut Para Ahli</h3>
+      <p class="mb-5 text-gray-700">
+        Berikut beberapa definisi akuntansi dari para ahli yang terkenal:
+      </p>
+      <ul class="list-disc list-inside space-y-3 text-gray-700 mb-10">
+        <li><strong>American Institute of Certified Public Accountants (AICPA):</strong> Akuntansi adalah seni mencatat,
+          mengklasifikasikan, dan meringkas transaksi keuangan dalam bentuk uang serta menafsirkan hasilnya.</li>
+        <li><strong>Ikatan Akuntan Indonesia (IAI):</strong> Akuntansi adalah proses identifikasi, pengukuran, dan pelaporan
+          informasi ekonomi untuk memungkinkan pengambilan keputusan oleh para pengguna informasi tersebut.</li>
+        <li><strong>Warren dan Reeve:</strong> Akuntansi adalah proses mengidentifikasi, mengukur, dan mengkomunikasikan
+          informasi ekonomi yang berguna untuk pengambilan keputusan.</li>
+      </ul>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">1.2 Tujuan Akuntansi</h3>
+      <p class="mb-5 text-gray-700 leading-relaxed">
+        Tujuan utama akuntansi adalah menyediakan informasi keuangan yang akurat dan tepat waktu agar dapat digunakan
+        dalam pengambilan keputusan yang efektif. Beberapa tujuan khususnya meliputi:
+      </p>
+      <ol class="list-decimal list-inside space-y-3 text-gray-700 mb-12">
+        <li>Menyediakan informasi keuangan yang dapat dipercaya untuk para pemangku kepentingan.</li>
+        <li>Membantu manajemen dalam perencanaan dan pengendalian keuangan.</li>
+        <li>Memfasilitasi pengambilan keputusan investasi dan pembiayaan.</li>
+        <li>Memenuhi kewajiban hukum dan perpajakan.</li>
+        <li>Meningkatkan transparansi dan akuntabilitas perusahaan.</li>
+      </ol>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">1.3 Fungsi Akuntansi</h3>
+      <p class="mb-5 text-gray-700">
+        Akuntansi memiliki beberapa fungsi penting dalam bisnis dan organisasi:
+      </p>
+      <ul class="list-disc list-inside space-y-4 text-gray-700 mb-12">
+        <li><strong>Pencatatan (Recording):</strong> Mencatat setiap transaksi secara kronologis dan sistematis.</li>
+        <li><strong>Klasifikasi (Classifying):</strong> Mengelompokkan transaksi ke dalam akun-akun yang relevan.</li>
+        <li><strong>Pengikhtisaran (Summarizing):</strong> Menyusun data yang telah diklasifikasi menjadi laporan keuangan.</li>
+        <li><strong>Pelaporan (Reporting):</strong> Menyampaikan laporan keuangan kepada pihak yang membutuhkan.</li>
+        <li><strong>Analisis dan Interpretasi:</strong> Mengkaji dan menafsirkan informasi untuk pengambilan keputusan.</li>
+      </ul>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">1.4 Sejarah Akuntansi</h3>
+      <p class="text-gray-700 mb-8">
+        Akuntansi telah berkembang sejak ribuan tahun lalu, dimulai dari pencatatan perdagangan di Mesopotamia kuno. Sistem
+        pembukuan berpasangan (double-entry bookkeeping) yang menjadi dasar akuntansi modern diperkenalkan oleh Luca
+        Pacioli di abad ke-15, yang dikenal sebagai "Bapak Akuntansi".
+      </p>
+
+      <p class="italic text-gray-600 text-center">"Akuntansi adalah bahasa bisnis yang wajib dikuasai untuk mencapai kesuksesan."</p>
+    </section>
+
+    <!-- Bab 2 -->
+    <section id="bab2" class="mb-24" data-aos="fade-up" data-aos-delay="100">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 2: Konsep Dasar dan Prinsip Akuntansi
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Akuntansi berdasarkan beberapa konsep dasar dan prinsip yang menjadi fondasi agar laporan keuangan dapat dipercaya
+        dan konsisten. Penerapan prinsip ini memastikan standar akuntansi terpenuhi secara sistematis.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">2.1 Konsep Dasar Akuntansi</h3>
+      <ul class="list-disc list-inside space-y-4 text-gray-700 mb-10">
+        <li><strong>Entitas Bisnis:</strong> Perusahaan diperlakukan sebagai entitas terpisah dari pemilik dan pihak lain.</li>
+        <li><strong>Kelangsungan Usaha:</strong> Diasumsikan perusahaan akan beroperasi terus-menerus dalam jangka waktu yang wajar.</li>
+        <li><strong>Unit Moneter:</strong> Semua transaksi dicatat dalam satuan mata uang yang stabil.</li>
+        <li><strong>Periode Akuntansi:</strong> Aktivitas perusahaan dibagi dalam periode tertentu seperti bulan atau tahun fiskal.</li>
+      </ul>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">2.2 Prinsip Akuntansi</h3>
+      <ol class="list-decimal list-inside space-y-4 text-gray-700 mb-12">
+        <li><strong>Regularity (Kepatuhan):</strong> Mengikuti standar akuntansi yang berlaku.</li>
+        <li><strong>Consistency (Konsistensi):</strong> Metode akuntansi diterapkan secara konsisten setiap periode.</li>
+        <li><strong>Sincerity (Kejujuran):</strong> Laporan harus dibuat dengan itikad baik dan jujur.</li>
+        <li><strong>Permanence of Methods:</strong> Penggunaan metode akuntansi yang tetap.</li>
+        <li><strong>Non-Compensation:</strong> Menghindari kompensasi antar elemen laporan keuangan.</li>
+        <li><strong>Prudence:</strong> Bersikap hati-hati dan konservatif dalam pencatatan.</li>
+        <li><strong>Continuity:</strong> Mengasumsikan kelangsungan usaha.</li>
+        <li><strong>Periodicity:</strong> Laporan dibuat berdasarkan periode tertentu.</li>
+      </ol>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">2.3 Contoh Penerapan</h3>
+      <p class="mb-8 text-gray-700">
+        Misalnya, dalam penerapan prinsip konsistensi, metode penyusutan yang digunakan pada aset tetap harus tetap sama dari tahun
+        ke tahun agar laporan dapat dibandingkan.
+      </p>
+    </section>
+
+    <!-- Bab 3 -->
+    <section id="bab3" class="mb-24" data-aos="fade-up" data-aos-delay="150">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 3: Siklus Akuntansi Lengkap
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Siklus akuntansi merupakan rangkaian proses yang dilakukan secara berurutan mulai dari pencatatan transaksi hingga penyusunan laporan keuangan. Siklus ini memastikan data keuangan perusahaan tercatat secara akurat dan sistematis.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">3.1 Langkah-Langkah Siklus Akuntansi</h3>
+      <ol class="list-decimal list-inside space-y-6 text-gray-700 mb-12">
+        <li>
+          <strong>Pencatatan Transaksi ke Jurnal Umum</strong><br />
+          Setiap transaksi keuangan dicatat secara kronologis dalam jurnal umum, mencakup tanggal, akun yang terlibat, debit, dan kredit.
+        </li>
+        <li>
+          <strong>Posting ke Buku Besar</strong><br />
+          Data dari jurnal umum dipindahkan ke buku besar untuk mengelompokkan transaksi per akun sehingga dapat diketahui saldo tiap akun.
+        </li>
+        <li>
+          <strong>Pembuatan Neraca Saldo Awal</strong><br />
+          Neraca saldo disusun untuk memastikan jumlah debit dan kredit sudah seimbang setelah posting buku besar.
+        </li>
+        <li>
+          <strong>Pembuatan Jurnal Penyesuaian</strong><br />
+          Jurnal penyesuaian dibuat untuk menyesuaikan saldo akun agar mencerminkan kondisi sebenarnya pada akhir periode akuntansi.
+        </li>
+        <li>
+          <strong>Pembuatan Neraca Saldo Setelah Penyesuaian</strong><br />
+          Neraca saldo baru disusun setelah jurnal penyesuaian untuk memastikan keseimbangan kembali tercapai.
+        </li>
+        <li>
+          <strong>Penyusunan Laporan Keuangan</strong><br />
+          Data dari neraca saldo setelah penyesuaian digunakan untuk membuat laporan keuangan seperti laporan laba rugi, neraca, dan laporan arus kas.
+        </li>
+        <li>
+          <strong>Penutupan Buku</strong><br />
+          Akun sementara (pendapatan dan beban) ditutup ke akun modal untuk memulai periode berikutnya dengan saldo nol pada akun sementara.
+        </li>
+      </ol>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">3.2 Contoh Praktis</h3>
+      <p class="mb-8 text-gray-700">
+        Misalnya, perusahaan melakukan penjualan sebesar Rp10.000.000 secara tunai. Transaksi ini dicatat di jurnal umum dengan mendebit Kas dan mengkredit Pendapatan Penjualan sebesar Rp10.000.000. Setelah itu, transaksi ini diposting ke buku besar dan diperiksa keseimbangannya pada neraca saldo.
+      </p>
+    </section>
+
+    <!-- Bab 4 -->
+    <section id="bab4" class="mb-24" data-aos="fade-up" data-aos-delay="200">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 4: Laporan Keuangan dan Fungsinya
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Laporan keuangan adalah dokumen yang menyajikan informasi keuangan perusahaan dalam suatu periode tertentu. Laporan ini digunakan oleh berbagai pihak untuk menilai kinerja dan posisi keuangan perusahaan.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">4.1 Jenis Laporan Keuangan</h3>
+      <ul class="list-disc list-inside space-y-4 text-gray-700 mb-12">
+        <li><strong>Laporan Laba Rugi:</strong> Menampilkan pendapatan dan beban selama periode tertentu sehingga menghasilkan laba atau rugi bersih.</li>
+        <li><strong>Neraca (Balance Sheet):</strong> Menunjukkan posisi aset, kewajiban, dan ekuitas pada tanggal tertentu.</li>
+        <li><strong>Laporan Arus Kas:</strong> Menggambarkan aliran kas masuk dan keluar selama periode akuntansi.</li>
+        <li><strong>Laporan Perubahan Modal:</strong> Menjelaskan perubahan modal pemilik selama periode tertentu.</li>
+      </ul>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">4.2 Fungsi Laporan Keuangan</h3>
+      <p class="mb-8 text-gray-700">
+        Fungsi utama laporan keuangan meliputi:
+      </p>
+      <ol class="list-decimal list-inside space-y-4 text-gray-700 mb-12">
+        <li>Menyediakan informasi untuk pengambilan keputusan investasi dan pembiayaan.</li>
+        <li>Mengukur kinerja keuangan perusahaan selama periode tertentu.</li>
+        <li>Memenuhi kewajiban pelaporan kepada pemerintah dan pihak berwenang.</li>
+        <li>Menjadi alat pengendalian internal perusahaan.</li>
+      </ol>
+    </section>
+
+    <!-- Bab 5 -->
+    <section id="bab5" class="mb-24" data-aos="fade-up" data-aos-delay="250">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 5: Akuntansi Perusahaan Dagang
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Perusahaan dagang adalah perusahaan yang bergerak di bidang pembelian dan penjualan barang. Akuntansi perusahaan dagang memiliki karakteristik khusus yang berbeda dengan perusahaan jasa.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">5.1 Perbedaan Akuntansi Perusahaan Dagang dan Jasa</h3>
+      <ul class="list-disc list-inside space-y-4 text-gray-700 mb-12">
+        <li>Perusahaan dagang memiliki akun Persediaan Barang, sedangkan perusahaan jasa tidak.</li>
+        <li>Perusahaan dagang mencatat Harga Pokok Penjualan (HPP), perusahaan jasa tidak.</li>
+        <li>Transaksi pembelian dan penjualan barang lebih kompleks karena melibatkan persediaan dan retur.</li>
+      </ul>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">5.2 Penghitungan Harga Pokok Penjualan (HPP)</h3>
+      <p class="mb-6 text-gray-700">
+        Harga Pokok Penjualan adalah biaya yang dikeluarkan untuk memperoleh barang yang dijual selama periode tertentu dan dihitung dengan rumus:
+      </p>
+      <p class="mb-8 text-center font-semibold text-blue-800">
+        HPP = Persediaan Awal + Pembelian Bersih - Persediaan Akhir
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">5.3 Pencatatan Persediaan</h3>
+      <p class="mb-8 text-gray-700">
+        Persediaan dicatat sebagai aset lancar pada neraca dan harus dilakukan penyesuaian pada akhir periode untuk mencerminkan nilai persediaan yang sebenarnya.
+      </p>
+    </section>
+
+    <!-- Bab 6 -->
+    <section id="bab6" class="mb-24" data-aos="fade-up" data-aos-delay="300">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 6: Akuntansi Perusahaan Jasa
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Perusahaan jasa menyediakan layanan dan tidak menjual barang. Akuntansi pada perusahaan jasa lebih sederhana dibanding dagang karena tidak ada persediaan barang.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">6.1 Pencatatan Pendapatan dan Beban</h3>
+      <p class="mb-8 text-gray-700">
+        Pendapatan jasa dicatat saat jasa diberikan, sedangkan beban dicatat saat terjadi. Akun-akun yang umum digunakan meliputi Pendapatan Jasa, Beban Gaji, Beban Operasional, dan Beban Lainnya.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">6.2 Penyusunan Laporan Keuangan</h3>
+      <p class="mb-8 text-gray-700">
+        Laporan keuangan perusahaan jasa terdiri dari laporan laba rugi, neraca, dan laporan arus kas yang disusun berdasarkan data transaksi jasa yang terjadi.
+      </p>
+    </section>
+
+    <!-- Bab 7 -->
+    <section id="bab7" class="mb-24" data-aos="fade-up" data-aos-delay="350">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 7: Jurnal Penyesuaian
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Jurnal penyesuaian dibuat untuk memperbaiki dan menyesuaikan saldo akun agar sesuai dengan kondisi sebenarnya sebelum laporan keuangan disusun. Hal ini penting agar laporan keuangan mencerminkan kondisi keuangan yang akurat.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">7.1 Jenis Jurnal Penyesuaian</h3>
+      <ul class="list-disc list-inside space-y-4 text-gray-700 mb-12">
+        <li><strong>Jurnal Beban yang Masih Harus Dibayar (Accrued Expenses):</strong> Beban yang sudah terjadi tapi belum dibayar.</li>
+        <li><strong>Jurnal Pendapatan yang Masih Harus Diterima (Accrued Revenues):</strong> Pendapatan yang sudah diperoleh tapi belum diterima.</li>
+        <li><strong>Jurnal Beban Dibayar Dimuka (Prepaid Expenses):</strong> Beban yang sudah dibayar tapi belum terjadi.</li>
+        <li><strong>Jurnal Pendapatan Diterima Dimuka (Unearned Revenues):</strong> Pendapatan yang diterima tapi belum diperoleh.</li>
+        <li><strong>Jurnal Penyusutan (Depreciation):</strong> Alokasi biaya aset tetap selama masa manfaatnya.</li>
+      </ul>
+    </section>
+
+    <!-- Bab 8 -->
+    <section id="bab8" class="mb-24" data-aos="fade-up" data-aos-delay="400">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 8: Penyusunan Laporan Keuangan
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Penyusunan laporan keuangan dilakukan setelah semua data transaksi dan penyesuaian dicatat dengan benar. Laporan ini harus sesuai dengan standar akuntansi yang berlaku dan memberikan gambaran yang jelas tentang kondisi keuangan perusahaan.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">8.1 Komponen Laporan Keuangan</h3>
+      <ul class="list-disc list-inside space-y-4 text-gray-700 mb-12">
+        <li><strong>Laporan Laba Rugi:</strong> Menyajikan pendapatan, beban, dan laba rugi bersih.</li>
+        <li><strong>Neraca:</strong> Menampilkan aset, kewajiban, dan ekuitas.</li>
+        <li><strong>Laporan Arus Kas:</strong> Mencatat aliran kas masuk dan keluar.</li>
+        <li><strong>Laporan Perubahan Modal:</strong> Menunjukkan perubahan modal pemilik.</li>
+      </ul>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">8.2 Tahapan Penyusunan</h3>
+      <ol class="list-decimal list-inside space-y-4 text-gray-700 mb-12">
+        <li>Menyusun neraca saldo setelah penyesuaian.</li>
+        <li>Membuat laporan laba rugi untuk mengetahui hasil usaha.</li>
+        <li>Menyusun laporan perubahan modal berdasarkan laba rugi dan transaksi modal.</li>
+        <li>Membuat neraca akhir untuk menggambarkan posisi keuangan perusahaan.</li>
+        <li>Menyusun laporan arus kas untuk menilai likuiditas perusahaan.</li>
+      </ol>
+    </section>
+
+    <!-- Bab 9 -->
+    <section id="bab9" class="mb-24" data-aos="fade-up" data-aos-delay="450">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 9: Analisis Laporan Keuangan
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Analisis laporan keuangan bertujuan untuk memahami kondisi keuangan dan kinerja perusahaan melalui berbagai teknik dan rasio keuangan.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">9.1 Rasio Keuangan Penting</h3>
+      <ul class="list-disc list-inside space-y-4 text-gray-700 mb-12">
+        <li><strong>Rasio Likuiditas:</strong> Mengukur kemampuan perusahaan memenuhi kewajiban jangka pendek (contoh: Current Ratio).</li>
+        <li><strong>Rasio Solvabilitas:</strong> Menilai kemampuan perusahaan membayar kewajiban jangka panjang (contoh: Debt to Equity Ratio).</li>
+        <li><strong>Rasio Profitabilitas:</strong> Mengukur efektivitas perusahaan menghasilkan laba (contoh: Return on Assets, Gross Profit Margin).</li>
+        <li><strong>Rasio Aktivitas:</strong> Menilai efisiensi penggunaan aset (contoh: Perputaran Persediaan).</li>
+      </ul>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">9.2 Interpretasi Hasil Analisis</h3>
+      <p class="mb-8 text-gray-700">
+        Hasil analisis rasio keuangan membantu pemilik, manajer, dan investor untuk membuat keputusan bisnis yang tepat seperti ekspansi usaha, investasi, atau efisiensi operasional.
+      </p>
+    </section>
+
+    <!-- Bab 10 -->
+    <section id="bab10" class="mb-24" data-aos="fade-up" data-aos-delay="500">
+      <h2
+        class="text-5xl font-extrabold text-blue-900 mb-12 border-b-4 border-blue-700 inline-block pb-2 tracking-wide select-none">
+        Bab 10: Standar Akuntansi dan Etika Profesi
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-800 mb-8">
+        Standar akuntansi adalah aturan dan pedoman yang digunakan dalam pencatatan dan pelaporan keuangan. Etika profesi akuntan menjamin bahwa informasi yang disajikan dapat dipercaya dan kredibel.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">10.1 Standar Akuntansi Keuangan (SAK)</h3>
+      <p class="mb-8 text-gray-700">
+        Di Indonesia, Standar Akuntansi Keuangan (SAK) dikeluarkan oleh Ikatan Akuntan Indonesia (IAI) yang mengacu pada IFRS (International Financial Reporting Standards). SAK memastikan konsistensi dan transparansi laporan keuangan.
+      </p>
+
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">10.2 Etika Profesi Akuntan</h3>
+      <ul class="list-disc list-inside space-y-4 text-gray-700 mb-12">
+        <li><strong>Integritas:</strong> Bertindak jujur dan dapat dipercaya.</li>
+        <li><strong>Objektivitas:</strong> Tidak memihak dan bebas dari konflik kepentingan.</li>
+        <li><strong>Kompetensi Profesional:</strong> Memiliki pengetahuan dan keterampilan yang memadai.</li>
+        <li><strong>Kerahasiaan:</strong> Menjaga informasi klien dan perusahaan.</li>
+        <li><strong>Perilaku Profesional:</strong> Mematuhi hukum dan aturan yang berlaku.</li>
+      </ul>
+
+      <p class="italic text-gray-600 text-center">"Profesionalisme dan etika adalah fondasi utama dalam dunia akuntansi."</p>
+    </section>
+  </main>
+
+  <footer class="bg-blue-900 text-white py-6 text-center font-semibold select-none">
+    <p>© 2025 Website Belajar Accounting Semua hak cipta dilindungi.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+
+</html>
